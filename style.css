@@ -2,6 +2,19 @@
     display: grid;
 }
 
+.hamburger {
+    display: none;
+    height: 40px;
+}
+
+div.bar {
+    display: block;
+    width: 25px;
+    height: 1px;
+    margin-top: 5px;
+    background-color: black;
+}
+
 .element {
     display: grid;
     border-bottom: 1px solid #E0E0E0;
@@ -18,14 +31,6 @@
 
 #one {
 grid-column: 5 / 6;
-}
-
-#two {
-
-}
-
-#three {
-
 }
 
 h1 {
@@ -49,6 +54,7 @@ h1 {
 .right {
     padding-left: 30px;
     color: #8695A4;
+    width: 200px;
 
 }
 
@@ -61,11 +67,13 @@ margin-top: 0px;
 margin-bottom: 0px;
 padding-top: 0px;
 padding-bottom: 0px;
+font-size: 20px;
 }
 
 .para {
     max-width: 682px;
     margin-top: 15px;
+    font-size: 16px;
 }
 
 .cont {
@@ -91,4 +99,45 @@ img {
 .copyright {
     margin-left: 700px;
     margin-top: 30px;
+}
+
+@media (max-width: 375px) {
+h1 {
+    margin-left: 5px;
+}
+
+.element {
+    margin-left: 5px;
+    width: 360px;
+    margin-right: 5px;
+    }
+
+    .icons {
+        grid-template-columns: 20px 70px 70px 70px 70px;
+    }
+
+    .left {
+        width: 125px;
+    }
+
+    .right {
+        padding-left: 10px;
+    }
+
+    .para {
+        width: 339px;
+    }
+
+    .copyright {
+        margin-left: 30px;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 330px;
+    }
+
+    .menu {
+        display: none;
+    }
 }
